@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/white"
+        android:text="Sign up"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="#f4fce3"
+        android:textSize="20sp"
+        app:startIconTint="#f4fce3"
+        app:endIconTint="#f4fce3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="#f4fce3"
+        android:textSize="20sp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilName"
+        app:startIconTint="#f4fce3"
+        app:endIconTint="#f4fce3"
+        app:startIconDrawable="@drawable/baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="#f4fce3"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="174dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maimy" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilConfirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:endIconMode="password_toggle"
+        android:textColorHint="#f4fce3"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        app:startIconTint="#f4fce3"
+        app:endIconTint="#f4fce3"
+        app:layout_constraintTop_toBottomOf="@+id/tilPassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etConfirm"
+            android:layout_width="match_parent"
+            android:textColor="#f4fce3"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:hint="Password Confirmation" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
